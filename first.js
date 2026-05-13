@@ -129,4 +129,51 @@
 // console.log(typeof Symbol(myInt)) //symbol
 
 
+// ---
 
+// var
+
+// var x = 10;
+// {
+//     var x = 20;
+//     console.log(x)
+// }
+// console.log(x)
+
+// let x = 10;
+// {
+//     let x = 20;
+//     console.log(x)
+// }
+// console.log(x)
+
+// var x = 10;
+// var x = 20;
+// console.log(x)
+
+// let x = 10;
+// let x = 20; // Identifier 'x' has already been declared
+// console.log(x)
+
+// console.log(x); //undefined
+// var x;
+// x = 10;
+
+// console.log(x); // Cannot access 'x' before initialization
+// let x;
+// x = 10;
+
+
+// let x = 10;
+// console.log(x)
+// x = 20;
+// console.log(x)
+
+// const x = 10;
+// console.log(x)
+// x = 20; //Assignment to constant variable.
+// console.log(x)
+
+
+// const x;
+// console.log(x) // Missing initializer in const declaration
