@@ -155,6 +155,8 @@
 // let x = 20; // Identifier 'x' has already been declared
 // console.log(x)
 
+// hoisting
+
 // console.log(x); //undefined
 // var x;
 // x = 10;
@@ -174,6 +176,137 @@
 // x = 20; //Assignment to constant variable.
 // console.log(x)
 
-
 // const x;
 // console.log(x) // Missing initializer in const declaration
+
+// -------------
+
+// ==  compare value only
+// ===  compare value and Data type
+
+// let x = 10;
+// let y = '10';
+
+// console.log(x == y)
+// console.log(x === y)
+
+// -------------
+//  14/05/26
+// -------------
+// https://ecma-international.org/publications-and-standards/standards/ecma-262/
+/*
+This Standard defines the ECMAScript 2025 general-purpose programming language.
+
+            var                                             let
+
+    var keword introduced in "ES1"                let keyword introduced in "ES6"
+
+    var keyword allows the duplicate              let keyword wont allows the duplicate
+    variables                                     variables
+
+    variable hoisting issue raised                we can overcome variable hoisting
+    with var keywors                              with let keyword
+
+    scope rule break by var keyword               let keyword obeys the scope rule
+
+    global polluting issue raised                 we can overcome global polluting issue
+    because of var keyword                        by using let keyword
+
+*/
+
+// == ===
+// NaN     null     undefined
+
+// console.log(10 * 'xsxs');
+// console.log(100 * 'fdfdf');
+
+// console.log(NaN == NaN)
+// console.log(NaN === NaN)
+
+// console.log(null == null)
+// console.log(null === null)
+// q
+// console.log(undefined == undefined)
+// console.log(undefined === undefined)
+
+// -------------
+//  15/05/26
+// -------------
+
+// console.log(NaN == undefined)
+// console.log(NaN === undefined)
+
+// console.log(NaN == null)
+// console.log(NaN === null)
+
+// console.log(undefined == null)
+// console.log(undefined === null)
+
+
+// array - object
+
+//The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations.
+
+// []
+// let arr = []
+// console.log(typeof arr)
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let arr = [1, 2, 'three', 4.0, "FIVE", 6, 7, 8, 9, '10', true]
+// console.log(arr)
+
+// console.log(typeof arr[4])
+// length - The length data property of an Array instance represents the number of slots in that array.
+
+// console.log(arr[4])
+// console.log(arr[9])
+// console.log(arr[15])
+
+// arr[15] = 16;
+// console.log(arr)
+// arr[12] = undefined
+// console.log(arr[12])
+// console.log(arr.length)
+
+// arr[3.1] = "x"
+// arr['key'] = "value"
+// console.log(arr)
+// console.log(arr['3.1'])
+// console.log(arr[3.1])
+// console.log(arr['key'])
+// console.log(arr.length)
+
+// console.log(arr.length)  //0 -10
+
+
+// arr['90'] = "Ninty";                // index
+// arr[900] = "Nine Hundred";          // index
+// // arr[2.2] = "twelve";             // key - value
+// console.log(arr)
+// console.log(arr.length)
+
+// console.log(arr['3']);
+
+// ----------------
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// console.log(arr.length)
+// arr[-3] = -3
+// console.log(arr)
+// console.log(arr.length)
+
+// let a = []
+// a[100] = 100
+// console.log(a)
+// console.log(a.length)
+
+
+let a = []
+let b;
+
+console.log(typeof a);
+console.log(typeof b);
+console.log([] == undefined);
+console.log([] == undefined);
+console.log(undefined == null)
