@@ -302,11 +302,114 @@ This Standard defines the ECMAScript 2025 general-purpose programming language.
 // console.log(a.length)
 
 
-let a = []
-let b;
+// let a = []
+// let b;
 
-console.log(typeof a);
-console.log(typeof b);
-console.log([] == undefined);
-console.log([] == undefined);
-console.log(undefined == null)
+// console.log(typeof a);
+// console.log(typeof b);
+// console.log([] == undefined);
+// console.log([] == undefined);
+
+// console.log(undefined == null)
+
+// -------------
+//  18/05/26
+// -------------
+
+
+// In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context.
+// All values are truthy unless they are defined as falsy.
+
+// console.log(111 == true)
+
+// if (111)
+//     console.log("true")
+
+// if (true)
+// if (false)
+// console.log("TRUE")
+
+// if ({})
+// console.log("TRUE")
+// if ([]);
+// console.log("TRUE")
+// if (42);
+
+// console.log(0 == false)
+// console.log('0' == false)
+
+// if(expression)
+
+// if ('0') // ' 0'
+//     console.log("0 TRUE")
+
+
+// if (-42);
+// if (12n);
+// if (3.14);
+// if (-3.14);
+// if (Infinity);
+// if (-Infinity);
+
+
+//  &&
+
+// console.log(false && 1 && "dog")
+// console.log(1 && false && "dog")
+// console.log(1 && true && "dog")
+
+// console.log([] && "dog")
+
+//inbuilt Array Function
+//----------------------
+
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+// delete pop - shift
+// The shift() method of Array instances removes the first element from an array and returns that removed element. This method changes the length of the array.
+// arr.shift()
+// arr.shift()
+// let shiftedElement = arr.shift()
+// console.log(`Shifted element is ${shiftedElement}`)
+// console.log(arr)
+// console.log(arr.length)
+
+
+
+// The pop() method of Array instances removes the last element from an array and returns that element. This method changes the length of the array.
+// arr.pop()
+// arr.pop()
+// let popedElement = arr.pop()
+// console.log(`Poped element is ${popedElement}`)
+// console.log(arr)
+// console.log(arr.length)
+
+// insert push - unshift
+
+// The unshift() method of Array instances adds the specified elements to the beginning of an array and returns the new length of the array.
+
+
+// arr.unshift(100)
+// arr.unshift(101)
+// arr.unshift(100, 101)
+
+// let arrRet = arr.unshift(100, 101, 102, 103)
+// console.log(`array return ${arrRet} `)
+// console.log(arr)
+// console.log(arr.length)
+
+// The push() method of Array instances adds the specified elements to the end of an array and returns the new length of the array.
+
+// push()
+// push(element1)
+// push(element1, element2)
+// push(element1, element2, /* …, */ elementN)
+
+// arr.push(100)
+// arr.push(101)
+// arr.push(100, 101)
+
+// let arrRet = arr.push(100, 101, 102, 103)
+// console.log(`array return ${arrRet} `)
+// console.log(arr)
+// console.log(arr.length)
