@@ -413,3 +413,110 @@ This Standard defines the ECMAScript 2025 general-purpose programming language.
 // console.log(`array return ${arrRet} `)
 // console.log(arr)
 // console.log(arr.length)
+
+// -------------
+//  19/05/26
+// -------------
+
+// deep copy
+// shallow copy
+
+// let arr1 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+// let arr2 = arr1;
+
+// arr1.push(200)
+// arr2.push(100)
+
+// console.log(`arr1 : ${arr1}`)
+// console.log(`arr2 : ${arr2}`)
+
+// Shallow copy
+
+// A shallow copy of an object is a copy whose properties share the same references (point to the same underlying values) as those of the source object from which the copy was made. As a result, when you change either the source or the copy, you may also cause the other object to change too.
+
+// Deep copy
+// That behavior contrasts with the behavior of a deep copy, in which the source and copy are completely independent.
+
+// More formally, two objects o1 and o2 are shallow copies if:
+
+// They are not the same object (o1 !== o2).
+// The properties of o1 and o2 have the same names in the same order.
+// The values of their properties are equal.
+// Their prototype chains are equal.
+
+// splice
+
+// The splice() method of Array instances changes the contents of an array by
+// removing or replacing existing elements
+//  and/or
+// adding new elements in place
+
+
+// splice(start)
+// splice(start, deleteCount)
+// splice(start, deleteCount, item1)
+// splice(start, deleteCount, item1, item2)
+// splice(start, deleteCount, item1, item2, /* …, */ itemN)
+
+// Return value
+// An array containing the deleted elements.
+
+// let arr1 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+// arr1.splice(4)
+// arr1.splice(8)
+// arr1.splice(3, 2)
+// arr1.splice(5, 3)
+// let deletedElem = arr1.splice(5, 3, 100)
+// let deletedElem = arr1.splice(5, 3, 100, 101, 102, 103)
+// arr1.splice(-4)
+// arr1.splice(-7, 5)
+// arr1.splice(-7, )
+// arr1.splice(-1, 5)
+
+
+// console.log(`Deleted Elements : ${deletedElem}`)
+// console.log(arr1)
+
+
+
+// The slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+
+// let arr1 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+// slice()
+// slice(start)
+// slice(start, end)
+// ++
+// let arr2 = arr1.slice(5)
+// let arr2 = arr1.slice(2, 6)
+// let arr2 = arr1.slice(3, 6)
+
+// let arr2 = arr1.slice(-2)
+// let arr2 = arr1.slice(-7)
+// -,+
+// let arr2 = arr1.slice(-7, 5)
+// let arr2 = arr1.slice(-8, 8)
+// +,-
+// let arr2 = arr1.slice(2, -2)
+// let arr2 = arr1.slice(3, -3)
+// let arr2 = arr1.slice(5, -8)  []
+
+// let arr2 = arr1.slice(-5, -2)
+
+
+// console.log(arr1)
+// console.log(arr2)
+
+// let arr1 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+// let arr2 = arr1;            //shallow Copy
+// let arr3 = arr1.slice()     //Deep Copy
+
+// arr1.pop()
+// arr2.shift()
+// arr3.push(100)
+
+// console.log(`Arr1  :  ${arr1}`)
+// console.log(`Arr2  :  ${arr2}`)
+// console.log(`Arr3  :  ${arr3}`)
