@@ -520,3 +520,25 @@ This Standard defines the ECMAScript 2025 general-purpose programming language.
 // console.log(`Arr1  :  ${arr1}`)
 // console.log(`Arr2  :  ${arr2}`)
 // console.log(`Arr3  :  ${arr3}`)
+
+// -------------
+//  20/05/26
+// -------------
+
+// at()
+// concat()
+// findIndex()
+// findLast()
+// findLastIndex()
+// flat()
+// flatMap()
+// indexOf()
+// join()
+// lastIndexOf()
+// reverse()
+// toLocaleString()
+// toReversed()
+// toSorted()
+// toSpliced()
+// toString()
+
