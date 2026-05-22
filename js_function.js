@@ -86,3 +86,78 @@ arg & param are not mandatory..
 
 // console.log(doSum(100, 200))
 
+
+// -------------
+//  22/05/26
+// -------------
+// const func_one = function () {
+//     console.log(" Func_one Called ")
+// }
+
+// function func_two(param) {
+//     // console.log(param())
+//     param()
+// }
+// func_two(()=> {
+//     console.log(" Func_one Called ")
+// })
+// func_two(func_one)
+
+// const func_one = function () {
+//     console.log(" Func_one Called ")
+//     return "ret-from func"
+// }
+// function func_two(param) {
+//     // console.log(param())
+//     param()
+// }
+
+// func_two(func_one)
+
+// -----------------------------
+// function func_one() {
+//     console.log(" Func_one Called ")
+// }
+// function func_two(param) {
+//     console.log(param)
+//     // param()
+// }
+// func_two(func_one)
+
+// -----------------------------
+
+// console.log(() => { })
+// console.log(function test() {
+//     console.log("Hello")
+// })
+
+// function func_two(param) {
+//     // console.log(`Func_two - Param : ${param}`)
+//     console.log('Func_two - Param : ', param)
+//     // param()
+// }
+// // func_two(() => {
+// //     console.log(" Func_one Called ")
+// // })
+// func_two(function test() {
+//     console.log("Hello")
+// })
+
+// -----------------------------------
+
+// function func_two() {
+//     return "ret-func-two"
+// }
+// function func_one() {
+//     return func_two
+// }
+
+// console.log(func_one())
+// console.log(`${func_one()}`)
+
+// console.log(func_one())
+// console.log(`${func_one()}`)
+
+// // call  func2 as func_one return
+// console.log(func_one()()) //func_two()
+// console.log(`${func_one()()}`)

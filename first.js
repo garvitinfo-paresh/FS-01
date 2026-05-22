@@ -541,4 +541,3 @@ This Standard defines the ECMAScript 2025 general-purpose programming language.
 // toSorted()
 // toSpliced()
 // toString()
-
