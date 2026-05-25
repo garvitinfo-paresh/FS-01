@@ -161,3 +161,113 @@ arg & param are not mandatory..
 // // call  func2 as func_one return
 // console.log(func_one()()) //func_two()
 // console.log(`${func_one()()}`)
+
+
+// -------------
+//  25/05/26
+// -------------
+// Arrow functions are not inherently associated with a name. If the arrow function needs to call itself, use a named function expression instead. You can also assign the arrow function to a variable, allowing you to refer to it through that variable.
+
+
+// function doSquare(num) {
+//     return num * num;
+// }
+// console.log(doSquare(5))
+
+// let doSquare = (num) => {
+//     return num * num;
+// }
+
+// let doSquare = num => num * num;
+
+// invalud --
+// let doSquare = num =>
+//     console.log("inside doSquare fuction..")
+// return num * num;
+
+// console.log(doSquare)
+// console.log(doSquare(5))
+
+// ---------------
+
+// let doSum = (num1, num2) => num1 + num2;
+
+// console.log(doSum(10, 20))
+
+// -------------------
+// let func_one = () => {
+//     return "Hello"
+// }
+
+// let func = () => { };
+// console.log()
+
+// console.log(func_one)
+// console.log(`${func_one}`)
+
+// // Traditional anonymous function
+// (function (a, b) {
+//     const chuck = 42;
+//     return a + b + chuck;
+// });
+
+// // Arrow function
+// (a, b) => {
+//     const chuck = 42;
+//     return a + b + chuck;
+// };
+
+// ---------------------
+
+// let func_one = (param1, param2, param3) => {
+//     console.log(param1, " - ", param2, " - ", param3)
+// }
+
+// func_one("one", 2, 3.000000000000000000)
+// func_one("one", 2,)
+// func_one()
+
+// ------------------------------------
+
+// let func_one = () => {
+//     return () => "func_one"
+// }
+
+// // console.log(func_one)
+// let func_two = func_one()
+
+// // console.log(func_one())
+// // console.log(`${func_two}`)
+
+// console.log(func_one()())
+// console.log(func_two())
+
+// --------------------------------------------
+
+// let func_one = () => {
+//     return () => {
+//         return () => {
+//             return "Hello"
+//         }
+//     }
+// }
+
+// console.log(func_one()()())
+
+// --------------------------------------------
+
+// let func_one = (param1, param2, param3) => {
+//     console.log(param1(), " - ", param2(), " - ", param3())
+// }
+
+// func_one(
+//     () => { return "param1" },
+//     () => { return "param2" },
+//     () => { return "param3" }
+// )
+
+// func_one(
+//     () => "param1",
+//     () => "param2",
+//     () => "param3"
+// )
