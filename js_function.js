@@ -271,3 +271,86 @@ arg & param are not mandatory..
 //     () => "param2",
 //     () => "param3"
 // )
+
+// 03-06-2026
+
+// Default parameter function
+// while defining function, will initiate argument with default value
+
+// function fun_one(param1 = "1", param2 = "2", param3 = "3") {
+//     console.log(param1, " - ", param2, " - ", param3)
+// }
+
+// fun_one()
+// fun_one("one")
+// fun_one(" ", " two ")
+// fun_one(null, " two ")
+
+// rest parameter in function
+// pass multiple values in an array form as parameter
+// rest parameter represented by ...
+// ... spread operator
+// can use only one rest param in a functionS
+// rest parameter is held at last
+
+
+
+// let arr = ["one", "two", "three", "four", "Five"];
+
+// function fun_one(...restParam) {
+//     console.log(restParam)
+// }
+// fun_one("one", "two", "three", "four", "Five");
+// fun_one(arr, "six", "seven");
+// ----------------
+
+// function fun_one(...param) {
+//     console.log(param)
+// }
+
+// fun_one("one", "two", "three", "four", "Five")
+
+// ----------------
+
+// function fun_one(param1, ...param2) {
+//     console.log(param1, " - ", param2)
+
+// }
+
+// fun_one("one", "two", "three", "four", "Five")
+// ----------------
+// function fun_one(param1, param2, ...restParam) {
+//     console.log(param1, " - ", param2, " - ", restParam)
+
+// }
+
+// fun_one("one", "two", "three", "four", "Five")
+
+// ----------------Rest parameter must be last formal parameter
+// function fun_one(...restParam, param1, param2) {
+//     console.log(param1, " - ", param2, " - ", restParam)
+
+// }
+
+// fun_one("one", "two", "three", "four", "Five")
+// ----------------Rest parameter must be last formal parameter
+// function fun_one(param2, ...restParam, ...param1) {
+//     console.log(param1, " - ", restParam)
+
+// }
+
+// fun_one("one", "two", "three", "four", "Five")
+
+// IIFE - Immidiate Invokable Function Expression
+
+// ((param1, param2) => {
+//     console.log(param1, "-", param2)
+// })("one", "two")
+
+// ((param1, param2, param3) => {
+//     console.log(param1(), " - ", param2(), " - ", param3)
+// })(
+//     () => "Hello1",
+//     () => "Hello2",
+//     "three"
+// )
