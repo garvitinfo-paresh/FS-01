@@ -541,3 +541,172 @@ This Standard defines the ECMAScript 2025 general-purpose programming language.
 // toSorted()
 // toSpliced()
 // toString()
+
+//09-06-2026
+
+// map
+// The map() method of Array instances
+// creates a new array populated with the results of calling a provided function on every element in the calling array.
+// The map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+// let newArr = arr.map((x) => x * x)
+
+// console.log(arr)
+// console.log(newArr)
+
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+// function doSquare(x) {
+//     return x * x
+// }
+
+// let newArr = arr.map(doSquare)
+
+// console.log(arr)
+// console.log(newArr)
+
+// --------
+
+// const kvArray = [
+//     { key: 1, value: 10 },
+//     { key: 2, value: 20 },
+//     { key: 3, value: 30 },
+// ];
+
+// // console.log(kvArray)
+
+// let newKvArray = kvArray.map(({ key, value }) => ({ [key]: value }))
+// console.log(newKvArray)
+
+
+// const reformattedArray = kvArray.map(({ key, value }) => ({ [key]: value }));
+
+// console.log(reformattedArray); // [{ 1: 10 }, { 2: 20 }, { 3: 30 }]
+// console.log(kvArray);
+// [
+//   { key: 1, value: 10 },
+//   { key: 2, value: 20 },
+//   { key: 3, value: 30 }
+// ]
+
+// -----------
+
+// const cart = [5, 15, 25];
+// let total = 0;
+// const withTax = cart.map((cost) => {
+//     total += cost;
+//     return cost * 1.1;
+// });
+// console.log(withTax); // [6, 18, 30]
+// console.log(total); // 45
+
+// filter-----------
+
+
+// The filter() method of Array instances creates a shallow copy of a portion of a given array,
+//  filtered down to just the elements from the given array that pass the test implemented by the provided function.
+// const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+// const result = words.filter((word) => word.length > 6);
+
+// console.log(result);
+
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+// function isBigEnough(value) {
+//     return value >= 50;
+// }
+
+// const filtered = arr.filter(isBigEnough);
+// console.log(filtered)
+// // filtered is [12, 130, 44]
+
+
+// const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+// function isPrime(n) {
+//     if (n < 2) {
+//         return false;
+//     }
+//     if (n % 2 === 0) {
+//         return n === 2;
+//     }
+//     for (let factor = 3; factor * factor <= n; factor += 2) {
+//         if (n % factor === 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(array.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
+
+// const arr = [
+//     { id: 15 },
+//     { id: -1 },
+//     { id: 0 },
+//     { id: 3 },
+//     { id: 12.2 },
+//     {},
+//     { id: null },
+//     { id: NaN },
+//     { id: "undefined" },
+// ];
+
+// let invalidEntries = 0;
+
+// function filterByID(item) {
+//     if (Number.isFinite(item.id) && item.id !== 0) {
+//         return true;
+//     }
+//     invalidEntries++;
+//     return false;
+// }
+
+// const arrByID = arr.filter(filterByID);
+
+// console.log("Filtered Array\n", arrByID);
+// // Filtered Array
+// // [{ id: 15 }, { id: -1 }, { id: 3 }, { id: 12.2 }]
+
+// console.log("Number of Invalid Entries =", invalidEntries);
+// // Number of Invalid Entries = 5
+
+
+// ----------------
+
+// const array = [1, 2, 3, 4, 5, 6];
+
+// const initialValue = 0;
+// const sumWithInitial = array.reduce(
+//     (accumulator, currentValue) => {
+//         console.log(`acc : ${accumulator} - curr : ${currentValue}`)
+//     }
+//     // initialValue,
+// );
+
+// console.log(sumWithInitial);
+
+
+// The reduce() method of Array instances executes a user - supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element.
+// The final result of running the reducer across all elements of the array is a single value.
+
+// The first time that the callback is run there is no "return value of the previous calculation".If supplied, an initial value may be used in its place.Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element(index 1 instead of index 0).
+
+// const initialValue = 10;
+// const sumWithInitial = array.reduce(
+//     (accumulator, currentValue) => {
+//         console.log(`acc : ${accumulator} - curr : ${currentValue}`)
+//         return accumulator + currentValue
+//     },
+//     initialValue,
+// );
+
+// console.log(sumWithInitial);
+// // 0
+// // 1 2 3 4 5 6
+// acc :0   curr :1
+// acc :1   curr :2
+// acc :3   curr :3
+// acc :6   curr :4
