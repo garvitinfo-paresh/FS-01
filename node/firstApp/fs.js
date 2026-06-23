@@ -49,6 +49,19 @@
  */
 // const fs = require('fs');
 
+// let dir = __dirname;
+//windows ->
+// let myPath = 'D:\FS_JS\node\firstApp';   // static path
+
+// try {
+//     let myState = fs.statSync(dir);
+//     console.log(myState)
+// }
+// catch (err) {
+//     console.log(err)
+// }
+
+
 // let content = " Hello, we are learning node js."
 
 // // readFile
@@ -63,7 +76,6 @@
 
 
 // try {
-
 //     let data = fs.readFileSync('temp.txt', 'utf8')
 //     console.log(`Data : ${data}`)
 // }

@@ -16,6 +16,9 @@ const server = http.createServer((req, res) => {
         networkInterfaces: os.networkInterfaces()
     }))
 })
+
+
+
 // https://mirzaleka.medium.com/the-practical-use-cases-of-the-os-module-in-node-js-385269a19ec3
 // console.log(typeof server)
 // console.log(os.userInfo().username)
